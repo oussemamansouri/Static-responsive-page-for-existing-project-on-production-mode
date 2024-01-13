@@ -220,9 +220,15 @@ text-align: center;
         width: 95%;
     }
 }
+
+.item1,.item2,.item3{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .item1{
 background-image: url(./Image/opportunitie1.png);
-position: relative;
 }
 .item2{
     background-image: url(./Image/opportunitie2.png);
