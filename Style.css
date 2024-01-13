@@ -1,0 +1,423 @@
+@font-face {
+    font-family: SWCC ;
+    src: url(./fonts/SWCC-2-Regular.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl; /* for RTL languages */
+    font-family: SWCC;
+    border: solid;
+}
+
+/* header style start here */
+.career-header-container{
+    background-image: url(./Image/header_image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.career-header-content{
+    text-align: center;
+    background-color: #004c87ca;
+    width: 100%;
+    height: 100%;
+    padding:5%;
+}
+.career-header-content > h1 {
+    font-size: 77px ;
+    line-height: 130.13px;
+    color: #FFFFFF;
+    padding: 1% 0px;
+}
+.career-header-content > p {
+    font-size:40px ;
+    line-height: 67.6px;
+    color: #BBF912;
+    font-weight: lighter; 
+    padding:  0% 0px 2% 0px;
+}
+/* header style end here */
+
+
+/* main style start here */
+
+
+/* breadcrumb style start here */
+.career-breadcrumb-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 3%;
+    font-size: 20px;
+}
+
+.career-hyperlink {
+    text-decoration: none;
+    color:#0066CC;
+    display: flex;
+    align-items: center; /* Center the items vertically within the hyperlink */
+}
+
+.breadcrumb-middle {
+    padding: 0px 3px;
+}
+
+.material-symbols-sharp {
+    font-family: 'Material Icons Sharp';
+}
+
+/* Add some spacing between the home icon and text */
+.material-symbols-sharp:before {
+    margin-right: 5px;
+}
+
+/* Style the separator between breadcrumbs */
+samp {
+    margin: 0 5px;
+    color: #555555;
+}
+/* breadcrumb style end here */
+
+
+/* section 1 style start here */
+.career-section-1-container{
+    display: flex;
+    padding: 0% 2.8%;
+    background-color: #004c874c;
+    margin-bottom:25px ;
+}
+.career-right{
+    width: 50%;
+    color: #333333;
+    padding: 5% 0% 2% 3% ;
+}
+
+.career-left{
+    width: 50%;
+}
+
+.career-image{
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.250);
+}
+.career-item1{
+    font-size:27px ;
+    line-height: 45.63px;
+    padding-bottom:7% ;
+}
+.career-item2{
+    border-top:2px solid #BBF912;
+    font-size:20px ;
+    display: inline-block;
+    line-height: 33.8px;
+    padding-top:2% ;
+}
+.career-item3{
+    font-size:20px ;
+    line-height: 33.8px;
+}
+
+@media screen and (max-width:800px) {
+    .career-section-1-container{
+        flex-direction: column;
+    }
+    .career-right{
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    .career-left{
+        width: 100%;
+    }
+
+}
+/* section 1 style end here */
+
+
+/* advantages section style start here */
+.career-advantages-container{
+text-align: center;
+}
+.career-advantages-title > h2{
+    display: inline-block;
+    border-bottom:3px solid #BBF912;  
+    font-size:40px;
+    color: #004C87;
+    padding: 10px;
+    line-height: 67.6px;
+}
+.career-advantages-title > p{
+    font-size:27px;
+    line-height: 45.63px;
+    padding: 10px;
+}
+
+.career-advantages-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.career-advantages-items > div{
+    width: 363px;
+    background-color:#0066CC24;
+    margin: 3%;
+    padding: 10px;
+}
+.career-advantage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #004C87;
+}
+.career-advantage > img{
+    width: 90px;
+    height: 90px;
+}
+.career-advantage > span{
+   font-size: 27px;
+   line-height: 45.63px;
+}
+/* advantages section style start here */
+
+
+/* career opportunities style start here */
+.career-opportunities-container{
+    text-align: center;
+}
+.career-opportunities-title{
+    display: inline-block;
+    border-bottom:3px solid #BBF912;  
+    font-size:40px;
+    color: #004C87;
+    padding: 10px;
+    line-height: 67.6px;
+}
+.career-opportunities-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:  7px 2.5%;
+}
+.opportunities-items{
+    width: 460px;
+    height: 500px;
+    border-radius:5px ;
+    margin: 2% 0%;
+}
+@media screen and (max-width:500px) {
+    .opportunities-items{
+        width: 95%;
+    }
+}
+.item1{
+background-image: url(./Image/opportunitie1.png);
+position: relative;
+}
+.item2{
+    background-image: url(./Image/opportunitie2.png);
+    position: relative;
+}
+.item3{
+    background-image: url(./Image/opportunitie3.png);
+    position: relative;
+}
+.opportunities-item-content{
+    background-image: linear-gradient( to top,rgba(0, 76, 135, 0.8) 0% 35%,rgba(0, 76, 135, 0));
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.opportunities-item-content > h3{
+    font-size: 50px;
+    line-height:84.5px;
+    text-align: center;
+    color:rgba(255, 255, 255, 1);
+}
+.opportunities-item-content > p{
+    font-size: 25px;
+    line-height:42.25px;
+    text-align: center;
+    color:rgba(255, 255, 255, 1);
+    padding: 0% 8%;
+}
+.item-button{
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+}
+.item-button > a > button {
+    font-size: 26px;
+    line-height:43.94px;
+    border-radius: 5px;
+    flex-basis: 150px;
+    height: 47px;
+    color:rgba(0, 102, 204, 1);
+    display: flex;
+    align-items:  center;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 47px;
+    cursor: pointer;
+    border: none;
+}
+.item-button > a > button:hover {
+  background-color:rgba(0, 102, 204, 1) ;
+  color:white;
+}
+/* career opportunities style end here */
+
+
+/* business environment style start here */
+.business-environment-container{
+    text-align: center;
+}
+.business-environment-title > h2{
+    display: inline-block;
+    border-bottom:3px solid #BBF912;  
+    font-size:40px;
+    color: #004C87;
+    padding: 10px;
+    line-height: 67.6px;
+}
+.business-environment-title > p{
+    font-size:32px;
+    line-height: 45.63px;
+    padding: 10px;
+}  
+
+.environment-slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+    padding: 30px 0px 60px 0px;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .main-slide {
+    transition: all 0.5s ease-in; 
+    width: 707px;
+    height: 371px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .left-1, .left-2, .right-1, .right-2 {
+    width: 510px; 
+    height: 304px;
+    border-radius: 10px;
+    box-shadow: 5px 8px 1px rgba(0, 0, 0, 0.250);
+    position: absolute;
+    transition: all 0.5s ; 
+  }
+  
+  .left-1, .right-1 {
+    z-index: 2;
+  }
+  
+  .left-2, .right-2 {
+    z-index: 1;
+  }
+  
+  .left-1 { left: 15%; }
+  .left-2 { left: 0%; }
+  .right-1 { right: 15%; }
+  .right-2 { right: 0%; }
+  
+  [class*='side-slide-'] {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slide-color {
+    position: absolute;
+    background-color: rgba(0, 76, 135, 0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .side-slide-left-2 {
+    background-image: url(./Image/left2.png);
+    border-radius: 10px;
+  }
+  
+  .side-slide-left-1 {
+    background-image: url(./Image/left1.png);
+    border-radius: 10px;
+  }
+  
+  .main-slide-image {
+    background-image: url(./Image/main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  
+  .side-slide-right-1 {
+    background-image: url(./Image/right1.png);
+    border-radius: 10px;
+  }
+  
+  .side-slide-right-2 {
+    background-image: url(./Image/right2.png);
+    border-radius: 10px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    z-index: 4;
+    cursor: pointer;
+  }
+  
+  .prev { left: 4%; }
+  .next { right: 4%; }
+  
+  @media screen and (max-width: 750px) {
+    .environment-slideshow-container{
+        padding: 0% 2%;
+    }
+    .main-slide {
+      width: 90%;
+    }
+    .left-1, .left-2, .right-1, .right-2 {
+      width: 90%;
+    }
+  }
+/* business environment style end here */
+
+
+
+
+
+
+
+
+
+
+/* main style end here */
