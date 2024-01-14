@@ -12,7 +12,6 @@
 body {
     direction: rtl; /* for RTL languages */
     font-family: SWCC;
-    border: solid;
 }
 
 /* header style start here */
